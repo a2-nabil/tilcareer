@@ -1,0 +1,159 @@
+/*# Global Css Start  */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+/*# Related Course css Start  */
+#a2n-related__course {
+  max-width: 850px;
+  margin: 50px auto;
+}
+.a2n-related_courses__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.a2n-course_card {
+  position: relative;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+  .a2n-course_start {
+    position: relative;
+    margin: 0 0 36px;
+    .a2n-course_thumb {
+      > a {
+        display: block;
+        z-index: 2;
+        position: relative;
+        height: 160px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    > a {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: -1px;
+      bottom: 0;
+      right: -1px;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(51, 51, 51, 0.8);
+      visibility: hidden;
+      opacity: 0;
+      z-index: 2;
+      transition: all 0.2s ease;
+      .a2n-course__price {
+        flex: 100% 1 0;
+        margin: 0;
+        text-align: center;
+        color: #21298c;
+        font-size: 25px;
+        del {
+          font-family: "Inter", sans-serif;
+          margin: 0 10px 0 0;
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 400 !important;
+          color: #aaa;
+        }
+        ins {
+          text-decoration: none;
+          span {
+            font-family: "Inter", sans-serif;
+            font-size: 25px;
+            line-height: 40px;
+            font-weight: 600 !important;
+          }
+        }
+        .woocommerce-price-suffix {
+          display: none;
+        }
+      }
+    }
+  }
+  .a2n-course__contents {
+    padding: 0 20px 7px;
+    .course_title {
+      font-family: "Inter", sans-serif;
+      padding: 0;
+      margin: 0 0 14px;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 700;
+      border: 0;
+      text-align: center;
+      display: -webkit-box;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      a {
+        color: #2d4649;
+        transition: 0.3s ease;
+      }
+    }
+    .a2n-course__terms {
+      margin: 10px 0 23px;
+      text-align: center;
+      span {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 27px;
+        color: #aaa;
+      }
+    }
+  }
+  .a2n-course__end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -5px 18px;
+    .a2n-meta {
+      padding: 0 5px;
+      margin: 0 0 10px;
+      vertical-align: top;
+      svg {
+        position: relative;
+        top: 2px;
+        margin-right: 2px;
+      }
+      span {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 23px;
+        color: #273044;
+      }
+    }
+  }
+  &:hover {
+    box-shadow: 0 5px 15px rgba(51,51,51,.2);
+    .a2n-course_start {
+      > a {
+        opacity: 1;
+        visibility: visible;
+      } 
+    }
+  }
+}
+/*# Related Course css End  */
