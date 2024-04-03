@@ -523,8 +523,32 @@ ol {
     font-size: 14px;
     padding: 39px 0 0 15px;
   }
+  .a2n-tabs_area .a2n_course_tabs {
+    padding: 30px;
+    background: #fff;
+  }
+  .a2n-tabs_area .a2n_course_tabs h2 {
+    font-size: 34px;
+    line-height: 44px;
+  }
+  .a2n-tabs_area .a2n_course_tabs h4 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .a2n-tabs_area .a2n_course_tabs ol li {
+    font-size: 15px;
+    line-height: 27px;
+  }
+  .a2n-tabs_area .a2n_course_tabs #a2n_add_review {
+    font-size: 15px;
+    line-height: 27px;
+  }
   .a2n-related_courses__container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .a2n-related_area .a2n_title {
+    font-size: 34px;
+    line-height: 44px;
   }
 }
 @media (max-width: 767px) {
@@ -533,6 +557,7 @@ ol {
   }
   .a2n-tabs_area .a2n-tabs_area__container {
     flex-direction: column;
+    gap: 0;
   }
   .a2n-tabs_area .a2n-course_sidebar {
     position: relative;
